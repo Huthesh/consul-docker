@@ -13,7 +13,7 @@ Follow these steps:
 ```
 If the container is started successfully we should be able to access Consul dashboard @ http://\<Client IP Address\>:8500/ and "dig @\<external IP address\> -p 8600 consul.service.consul" should display the DNS information
 ```
-Mac does not have network mode as host, and external IP should be mapped to 0.0.0.0. UI will be accessible http://localhost:8500/
+Mac does not have network mode as host,so --net=host can be skipped for mac, and external IP should be mapped to 0.0.0.0. UI will be accessible http://localhost:8500/
 ```
 + Consul should run in host network mode.     
 + consul agent -server will start the Consul in server mode       
